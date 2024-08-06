@@ -1,0 +1,19 @@
+<h1> By Country</h1>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+ <shared-search-box
+ (onValueEmmiter) = "searchByCountry($event)"
+ placeholder="Search by Country"></shared-search-box>
+
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <countries-table [countries]="countries"></countries-table>  </div>
+</div>

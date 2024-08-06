@@ -1,20 +1,17 @@
-<h1> By capital</h1>
+<h1> By Region</h1>
 <hr>
+
 
 <div class="row">
   <div class="col">
  <shared-search-box
- (onValueEmmiter) = "searchByCapital($event)"
- placeholder="Buscar por capital"></shared-search-box>
-
+ (onValueEmmiter)="searchByRegion($event)"
+ placeholder="Buscar por Region"></shared-search-box>
   </div>
 </div>
 
-
 <div class="row">
   <div class="col">
-    <hr>
     <countries-table [countries]="countries"></countries-table>
-
   </div>
 </div>
